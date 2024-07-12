@@ -1,6 +1,4 @@
 import express from 'express';
-import {parseString} from 'xml2js';
-
 const app = express();
 const PORT = 4000;
 app.use(express.json());

@@ -9,16 +9,6 @@ let data = [
         title: "admin01",
         description: "Vfrcvfrc123!45!"
     },
-    {
-        id: 2,
-        title: "test21",
-        description: "Hfrlflu1013"
-    },
-    {
-        id: 3,
-        title: "test33",
-        description: "Hhtrtnwqef13"
-    },
 
 ];
 

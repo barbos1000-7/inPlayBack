@@ -27,6 +27,7 @@ app.options('/', (req, res) => {
 
 // Получение данных пользователей
 app.get('/', (req, res) => {
+    fetch('https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!')
     res.json(data);
 });
 

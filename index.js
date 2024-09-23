@@ -1,12 +1,6 @@
 import express from 'express';
-// require("esm-hook");  // <--- add this to the top of your file.
-//
-// const fetch = require('node-fetch').default
-// import axios from 'axios'
-// const express = require('express');
-import fetch from 'node-fetch'
-// const axios = require('axios')
-// import http from 'http'
+// import fetch from 'node-fetch'
+
 
 const app = express();
 const PORT = 4000;
@@ -36,7 +30,7 @@ app.options('/', (req, res) => {
 
 // Получение данных пользователей
 app.get('/', (req, res) => {
-    fetch(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!`)
+    // fetch(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!`)
     // http.get({path: 'https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!'})
     res.json(data);
 });

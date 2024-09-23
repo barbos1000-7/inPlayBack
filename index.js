@@ -26,17 +26,15 @@ app.options('/', (req, res) => {
 
 // Получение данных пользователей
 app.get('/', (req, res) => {
-    // fetch(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!`)
-    // http.get({path: 'https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!'})
-    https.get('https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!', (resp) => {})
     res.json(data);
 });
 
 // Добавление нового пользователя
 app.post('/', (req, res) => {
-    const {title, description} = req.body;
-    const id = data.length > 0 ? data[data.length - 1].id + 1 : 1;
-    data.push({id, title, description});
+    const {data} = req.body;
+
+    https.get(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=${data}`, (resp) => {})
+
     res.json(data);
 });
 

@@ -26,16 +26,19 @@ app.options('/', (req, res) => {
 
 // Получение данных пользователей
 app.get('/', (req, res) => {
+
     res.json(data);
 });
 
 // Добавление нового пользователя
-app.post('/', (req, res) => {
+app.post('/', async (req, res) => {
     const {data} = req.body;
 
-    https.get(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=${data}`, (resp) => {})
+    await https.get(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=${data}`, (resp) => {
+        res.json(resp)
+    })
 
-    res.json(data);
+    // res.json(data);
 });
 
 // Удаление пользователя по ID

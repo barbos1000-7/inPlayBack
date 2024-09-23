@@ -1,17 +1,13 @@
 import express from 'express';
 // import fetch from 'node-fetch'
-
-
+import * as https from "node:https";
 const app = express();
 const PORT = 4000;
 app.use(express.json());
 
-let data = [
-    {
-        id: 1,
-        title: "admin01",
-        description: "Vfrcvfrc123!45!"
-    },
+let data = [{
+    id: 1, title: "admin01", description: "Vfrcvfrc123!45!"
+},
 
 ];
 
@@ -32,6 +28,7 @@ app.options('/', (req, res) => {
 app.get('/', (req, res) => {
     // fetch(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!`)
     // http.get({path: 'https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!'})
+    https.get('https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=sosi-penis!', (resp) => {})
     res.json(data);
 });
 

@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "index.cjs",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

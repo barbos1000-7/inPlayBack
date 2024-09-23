@@ -1,10 +1,10 @@
 import express from 'express';
-require("esm-hook");  // <--- add this to the top of your file.
-
-const fetch = require('node-fetch').default
+// require("esm-hook");  // <--- add this to the top of your file.
+//
+// const fetch = require('node-fetch').default
 // import axios from 'axios'
 // const express = require('express');
-// import fetch from 'node-fetch'
+import fetch from 'node-fetch'
 // const axios = require('axios')
 // import http from 'http'
 

@@ -32,7 +32,8 @@ app.get('/', (req, res) => {
 
 // Добавление нового пользователя
 app.post('/', async (req, res) => {
-    await https.get(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=${JSON.stringify(req.body)}`, (resp) => {
+    console.log(req.body)
+    await https.get(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=${req.body}`, (resp) => {
         res.json(resp)
     })
 

@@ -40,7 +40,7 @@ app.post('/', async (req, res) => {
         res.json(resp)
     })
 
-    // res.json(data);
+    res.json({successful: true});
 });
 
 // Удаление пользователя по ID

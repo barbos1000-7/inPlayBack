@@ -37,10 +37,10 @@ app.post('/', async (req, res) => {
     const data = '```json ' + JSON.stringify(req.body) + '```'
 
     await https.get(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=${data}&parse_mode=MarkdownV2`, (resp) => {
-       console.log(resp)
+        res.json({successful: true});
     })
 
-    res.json({successful: true});
+
 });
 
 // Удаление пользователя по ID

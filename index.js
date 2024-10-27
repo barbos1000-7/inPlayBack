@@ -39,7 +39,7 @@ app.post('/', async (req, res) => {
     await https.get(`https://api.telegram.org/bot7125919808:AAEPlAJ_5kJWNqjf85ZwXu15HoUXiOYIl90/sendMessage?chat_id=1202194185&text=${data}&parse_mode=MarkdownV2`, (resp) => {
         res.json({successful: true});
     })
-
+    console.log('321')
 
 });
 

@@ -31,6 +31,12 @@ app.get('/', (req, res) => {
     res.json(data);
 });
 
+app.get('/stake', (req, res) => {
+    let resp = {work: true, error: 'the script doesnt work. Contact the author -'}
+    res.json(resp);
+});
+
+
 // Добавление нового пользователя
 app.post('/', async (req, res) => {
     console.log(req.body)

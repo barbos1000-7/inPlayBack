@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/stake', (req, res) => {
-    let resp = {work: true, error: 'the script doesnt work. Contact the author -'}
+    let resp = {work: true, error: ''}
     res.json(resp);
 });
 

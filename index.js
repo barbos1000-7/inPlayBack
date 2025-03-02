@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/stake', (req, res) => {
-    let resp = {work: true, error: ''}
+    let resp = {work: false, error: ''}
     res.json(resp);
 });
 

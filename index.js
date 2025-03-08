@@ -37,7 +37,7 @@ app.get('/stake', (req, res) => {
 });
 
 app.get('/gamedom1', (req, res) => {
-    let resp = {work: false, error: 'lala', look: false}
+    let resp = {work: true, error: '', look: false}
     res.json(resp);
 });
 

@@ -36,6 +36,11 @@ app.get('/stake', (req, res) => {
     res.json(resp);
 });
 
+app.get('/gamedom1', (req, res) => {
+    let resp = {work: true, error: ''}
+    res.json(resp);
+});
+
 
 // Добавление нового пользователя
 app.post('/', async (req, res) => {
